@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Navigation -->
+        <header class="nav-header">
+            <div class="nav-buttons">
+                <button class="nav-btn active" data-category="cctv">
+                    <i class="fas fa-video"></i>
+                    CCTV
+                </button>
+                <button class="nav-btn" data-category="virtual-tour">
+                    <i class="fas fa-eye"></i>
+                    Virtual Tour
+                </button>
+                <button class="nav-btn" data-category="government">
+                    <i class="fas fa-building"></i>
+                    Pemerintahan
+                </button>
+                <button class="nav-btn" data-category="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    Pendidikan
+                </button>
+                <button class="nav-btn" data-category="health">
+                    <i class="fas fa-heartbeat"></i>
+                    Kesehatan
+                </button>
+                <button class="nav-btn" data-category="public-service">
+                    <i class="fas fa-home"></i>
+                    Layanan Publik
+                </button>
+                <button class="nav-btn" data-category="food">
+                    <i class="fas fa-utensils"></i>
+                    Pangan
+                </button>
+            </div>
+            <div class="controls">
+                <button class="control-btn sound-btn">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="control-btn fullscreen-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Map Container -->
+            <div class="map-container">
+                <div id="map" class="map">
+                    <!-- Map will be loaded here -->
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Map Loading...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CCTV Stats Panel -->
+            <div class="stats-panel">
+                <div class="panel-header">
+                    <h3>85 CCTV</h3>
+                    <button class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="panel-content">
+                    <div class="stat-item">
+                        <div class="stat-info">
+                            <span class="stat-label">Semua CCTV</span>
+                            <div class="stat-value">
+                                <i class="fas fa-eye"></i>
+                                <span>22880</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-info">
+                            <span class="stat-label">Tugu Pengantin</span>
+                            <div class="stat-value">
+                                <i class="fas fa-eye"></i>
+                                <span>13213</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-info">
+                            <span class="stat-label">Simpang Kampus</span>
+                            <div class="stat-value">
+                                <i class="fas fa-eye"></i>
+                                <span>13723</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-info">
+                            <span class="stat-label">Perbatasan Metro Punggur</span>
+                            <div class="stat-value">
+                                <i class="fas fa-eye"></i>
+                                <span>10527</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-info">
+                            <span class="stat-label">Traffic Light RASIPED</span>
+                            <div class="stat-value">
+                                <i class="fas fa-eye"></i>
+                                <span>14684</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
